@@ -98,8 +98,8 @@ const Formulario = () => {
               />
               <p>Fecha:</p>
               <input
-                type='text'
-                placeholder='dd/mm/año'
+                type='date'
+                placeholder='año/mm/día'
                 name='fecha'
                 value={dato.fecha}
                 onChange={obtenerInputs}
