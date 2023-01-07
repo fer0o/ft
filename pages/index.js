@@ -22,7 +22,7 @@ export default function Home ({ win }) {
       <Layout>
         <div className='grid grid-cols-3 gap-4'>
           {win.map(win => (
-            <div>
+            <div key={win.id}>
               <Card
                 key={win.id}
                 id={win.id}
