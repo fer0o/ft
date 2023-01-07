@@ -4,7 +4,7 @@ const Card = props => {
   const { id, nombre, arena, fecha, killFinal, modo, tipo } = props
   return (
     <div>
-      <div className='border-2 border-black'>
+      <div className='border-2 border-black' key={id}>
         <h1>{nombre}</h1>
         <h2>{arena}</h2>
         <h3>{fecha}</h3>

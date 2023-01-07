@@ -20,7 +20,7 @@ export default function Home ({ win }) {
   return (
     <div>
       <Layout>
-        <div className='row'>
+        <div className='grid grid-cols-3 gap-4'>
           {win.map(win => (
             <div>
               <Card
