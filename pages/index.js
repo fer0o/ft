@@ -24,6 +24,7 @@ export default function Home ({ win }) {
           {win.map(win => (
             <div>
               <Card
+                key={win.id}
                 id={win.id}
                 nombre={win.nombre}
                 arena={win.arena}
