@@ -17,6 +17,9 @@ export const getImageSource = nombre => {
   } else if (nombre === 'fer') {
     imageSource =
       'https://firebasestorage.googleapis.com/v0/b/fort-b6990.appspot.com/o/jinx%20fortnite.png?alt=media&token=a0febf07-63b7-48ed-bb09-f0c10ffd0ccd'
+  } else {
+    imageSource =
+      'https://firebasestorage.googleapis.com/v0/b/fort-b6990.appspot.com/o/fortnite-fishstick-outfit.webp?alt=media&token=952a5194-b997-4c99-be54-ff66ccfac856'
   }
 
   return imageSource
