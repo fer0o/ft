@@ -1,8 +1,25 @@
+const specialnamesLalito = [
+  'Lalito',
+  'Lalo',
+  'LaloJuega',
+  'Eduardo',
+  'lalo',
+  'lalito'
+]
+const specialNamesFer = [
+  'Fer',
+  'fer',
+  'fer0o',
+  'fer0osennin',
+  'fer00',
+  'ferOo',
+  'fernando'
+]
 export const getBackgroundColor = nombre => {
   let backgroundColor = ''
-  if (nombre === 'Lalito') {
+  if (specialnamesLalito.includes(nombre)) {
     backgroundColor = 'bg-yellow-50'
-  } else if (nombre === 'fer') {
+  } else if (specialNamesFer.includes(nombre)) {
     backgroundColor = 'bg-blue-200'
   }
 
