@@ -57,45 +57,58 @@ const Formulario = () => {
           <div>
             <form className=' flex flex-col space-y-2' onSubmit={enviarInfo}>
               <p>Nombre:</p>
-              <input
-                type='text'
-                placeholder='nombre ganador'
+
+              <select
                 name='nombre'
                 value={dato.nombre}
                 onChange={obtenerInputs}
                 required
                 className='border-2 border-black rounded-lg p-2'
-              />
+              >
+                <option />
+                <option value='fer'>Fer</option>
+                <option value='lalito'>Lalo</option>
+              </select>
               <p>Tipo (Solo/Duo/Trio/Squads):</p>
-              <input
-                type='text'
-                placeholder='Solo/Duo/Trio/Squads'
+
+              <select
                 name='tipo'
                 value={dato.tipo}
                 onChange={obtenerInputs}
                 required
                 className='border-2 border-black rounded-lg p-2'
-              />
+              >
+                <option value='Solo'>Solo</option>
+                <option value='Duo'>Duos</option>
+                <option value='Trio'>Trio</option>
+                <option value='Squad'>Squad</option>
+              </select>
               <p>Arena:</p>
-              <input
-                type='text'
-                placeholder='si/no'
+
+              <select
                 name='arena'
                 value={dato.arena}
                 onChange={obtenerInputs}
                 required
                 className='border-2 border-black rounded-lg p-2'
-              />
+              >
+                <option />
+                <option value='Si'>Si</option>
+                <option value='No'>No</option>
+              </select>
               <p>Kill Final:</p>
-              <input
-                type='text'
-                placeholder='Nombre kill final'
+
+              <select
                 name='killFinal'
                 value={dato.killFinal}
                 onChange={obtenerInputs}
                 required
                 className='border-2 border-black rounded-lg p-2'
-              />
+              >
+                <option />
+                <option value='Fer'>Fer</option>
+                <option value='Lalito'>Lalito</option>
+              </select>
               <p>Fecha:</p>
               <input
                 type='date'
@@ -107,15 +120,18 @@ const Formulario = () => {
                 className='border-2 border-black rounded-lg p-2'
               />
               <p>Modo (Con/Sin Construcción):</p>
-              <input
-                type='text'
-                placeholder='con/sin'
+
+              <select
                 name='modo'
                 value={dato.modo}
                 onChange={obtenerInputs}
                 required
                 className='border-2 border-black rounded-lg p-2'
-              />
+              >
+                <option />
+                <option value='Con'>Con</option>
+                <option value='Sin'>Sin</option>
+              </select>
               <div className='flex flex-row gap-8 m-4 '>
                 <button className=' border-2 border-black px-8 py-2  mx-auto  rounded-lg'>
                   Enviar

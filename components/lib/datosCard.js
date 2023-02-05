@@ -1,25 +1,8 @@
-const specialnamesLalito = [
-  'Lalito',
-  'Lalo',
-  'LaloJuega',
-  'Eduardo',
-  'lalo',
-  'lalito'
-]
-const specialNamesFer = [
-  'Fer',
-  'fer',
-  'fer0o',
-  'fer0osennin',
-  'fer00',
-  'ferOo',
-  'fernando'
-]
 export const getBackgroundColor = nombre => {
   let backgroundColor = ''
-  if (specialnamesLalito.includes(nombre)) {
+  if (nombre === 'lalito') {
     backgroundColor = 'bg-yellow-50'
-  } else if (specialNamesFer.includes(nombre)) {
+  } else if (nombre === 'fer') {
     backgroundColor = 'bg-blue-200'
   }
 
@@ -28,7 +11,7 @@ export const getBackgroundColor = nombre => {
 
 export const getImageSource = nombre => {
   let imageSource = ''
-  if (nombre === 'Lalito') {
+  if (nombre === 'lalito') {
     imageSource =
       'https://firebasestorage.googleapis.com/v0/b/fort-b6990.appspot.com/o/WhatsApp%20Image%202023-01-07%20at%206.19.10%20AM.jpeg?alt=media&token=79f53b9f-e5eb-480c-ae73-4a305ab80824'
   } else if (nombre === 'fer') {
