@@ -10,8 +10,6 @@ export default function Navbar () {
         </div>
         <div className='flex gap-8 mx-4 '>
           <Link href='/formulario'>Agregar Victoria</Link>
-          <Link href='#'>2</Link>
-          <Link href='#'>3</Link>
         </div>
       </nav>
     </div>

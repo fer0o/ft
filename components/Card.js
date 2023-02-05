@@ -3,6 +3,8 @@ import { getBackgroundColor, getImageSource } from './lib/datosCard'
 
 const Card = props => {
   const { id, nombre, arena, fecha, killFinal, modo, tipo } = props
+  const nombreMinus = nombre.toLowerCase()
+  const killFinalMinus = killFinal.toLowerCase()
   const backgroundColor = getBackgroundColor(nombre)
   const imageSource = getImageSource(nombre)
 
@@ -20,7 +22,7 @@ const Card = props => {
         </div>
         <div className=' flex flex-row justify-center space-x-2 py-2'>
           <h3 className='font-bold'>Nombre Victoria:</h3>
-          <p>{nombre}</p>
+          <p>{nombreMinus}</p>
         </div>
         <div className='flex flex-row justify-center space-x-2'>
           <h3 className='font-bold'>Fecha:</h3>
@@ -32,7 +34,7 @@ const Card = props => {
         </div>
         <div className='flex flex-row justify-center space-x-2'>
           <h3 className='font-bold'>Kill Final:</h3>
-          <p>{killFinal}</p>
+          <p>{killFinalMinus}</p>
         </div>
         <div className='flex flex-row justify-center space-x-2'>
           <h3 className='font-bold'>Modo:</h3>
